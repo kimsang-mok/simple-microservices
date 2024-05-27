@@ -15,17 +15,14 @@ repositories {
 }
 
 ext {
-	springBootVersion = '2.5.2'
+    springBootVersion = '3.3.0'
 }
 
 dependencies {
 	implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
-
 	implementation project(':api')
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'io.projectreactor:reactor-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
