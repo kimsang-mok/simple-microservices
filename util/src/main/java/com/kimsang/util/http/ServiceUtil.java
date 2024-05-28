@@ -2,6 +2,7 @@ package com.kimsang.util.http;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
